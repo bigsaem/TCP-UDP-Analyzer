@@ -1,0 +1,271 @@
+// Microsoft Visual C++ generated resource script.
+//
+#pragma code_page(65001)
+
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_TCPUDPANALYZER      ICON                    "TCP_UDP_Analyzer.ico"
+
+IDI_SMALL               ICON                    "small.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_TCPUDPANALYZER MENU
+BEGIN
+    MENUITEM "Client",                      CLIENT
+    MENUITEM "Server",                      SERVER
+    POPUP "ClientMenu", INACTIVE
+    BEGIN
+        MENUITEM "Connect",                     ID_CLIENTMENU_CONNECT
+        MENUITEM "Transmit Packets",            ID_TRANSMITDATA_PACKETS, INACTIVE
+    END
+    POPUP "ServerMenu", INACTIVE
+    BEGIN
+        MENUITEM "Data Configuration",          ID_SERVERMENU_DATACONFIGURATION
+        MENUITEM "Run Server",                  ID_SERVERMENU_RUNSERVER, INACTIVE
+    END
+    MENUITEM "Disconnect",                  32780
+    MENUITEM "Exit",                        IDM_EXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_TCPUDPANALYZER ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About TCP_UDP_Analyzer"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "TCP_UDP_Analyzer, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (c) 2020",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_PROTOCOL_IP_PROMPT DIALOGEX 0, 0, 259, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
+CAPTION "Protocol and IP configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    LTEXT           "Choose the protocol to use",IDC_STATIC,15,15,115,8
+    COMBOBOX        IDC_COMBO_PROTOCOL,15,27,88,44,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Type port number to use",IDC_STATIC,15,42,85,12
+    EDITTEXT        IDC_PORT,16,55,80,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,149,85,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,202,85,50,14
+    LTEXT           "Type IP address or Host name to connect",IDC_HOST_PROMPT,113,14,139,8
+    EDITTEXT        IDC_IP_HOST,112,27,133,12,ES_AUTOHSCROLL
+    LTEXT           "IP or Host name error",IDC_IP_WARNING,15,70,227,12,NOT WS_VISIBLE
+    LTEXT           "Type port number of the destination",IDC_HOST_PORT,112,42,130,8
+    EDITTEXT        IDC_PORT_DESTINATION,112,54,77,13,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_PROTOCOL_IP_PROMPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "TCP_UDP_Analyzer"
+    IDC_TCPUDPANALYZER      "TCPUDPANALYZER"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENC)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_CAN
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DATA_CONFIGURATION DIALOGEX 0, 0, 255, 158
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Transmit data"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,143,137,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,198,137,50,14
+    LTEXT           "Choose the packet size",IDC_STATIC,16,67,96,8
+    COMBOBOX        IDC_COMBO_PACKET,15,78,83,63,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Type how many times you want to send the packet",IDC_STATIC,16,96,180,8
+    COMBOBOX        IDC_PACKET_TIME,15,109,83,70,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "File Transmission",IDC_RADIO_FILE,"Button",BS_AUTORADIOBUTTON,99,23,68,8
+    CONTROL         "Packet Transmission",IDC_RADIO_PACKET,"Button",BS_AUTORADIOBUTTON,16,23,71,8
+    LTEXT           "File path",IDC_STATIC,17,35,112,10
+    LTEXT           "Choose what to send",IDC_STATIC,16,7,84,8
+    EDITTEXT        IDC_FILE_PATH,15,48,143,15,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Browse for file",IDC_BUTTON_FILE,172,47,55,16,WS_DISABLED
+END
+
+IDD_FILETRANSFER DIALOGEX 0, 0, 309, 148
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File transfer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,127,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,127,50,14
+    LTEXT           "Choose the packet size",IDC_STATIC,18,50,96,8
+    COMBOBOX        IDC_COMBO_PACKET,18,61,83,63,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Type how many times you want to send the packet",IDC_STATIC,18,81,180,8
+    COMBOBOX        IDC_PACKET_TIME,18,94,83,70,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "File path",IDC_STATIC,19,16,87,8
+    EDITTEXT        IDC_EDIT1,18,30,177,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Brows for file",IDC_BUTTON1,206,29,68,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DATA_CONFIGURATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_FILETRANSFER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,14 @@
+﻿  File_Converter.cpp
+  TCP_Client.cpp
+  TCP_Server.cpp
+  TCP_UDP_Analyzer.cpp
+  UDP_Client.cpp
+C:\Users\Sammy\OneDrive\Term4\COMP4985\Assignments\Assignment2\TCP_UDP_Analyzer\TCP_UDP_Analyzer\TCP_Client.cpp(137,13): warning C4018: '<': signed/unsigned mismatch
+  UDP_Server.cpp
+C:\Users\Sammy\OneDrive\Term4\COMP4985\Assignments\Assignment2\TCP_UDP_Analyzer\TCP_UDP_Analyzer\UDP_Client.cpp(69,13): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  0 of 220 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  TCP_UDP_Analyzer.vcxproj -> C:\Users\Sammy\OneDrive\Term4\COMP4985\Assignments\Assignment2\TCP_UDP_Analyzer\Release\TCP_UDP_Analyzer.exe
